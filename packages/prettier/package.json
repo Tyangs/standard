@@ -1,0 +1,31 @@
+{
+  "name": "@tyangs/prettier",
+  "version": "1.0.0-beta.1",
+  "description": "Tyangs's code standards",
+  "author": "Tyangs <istyangs@gmail.com> (https://github.com/tyangs/)",
+  "license": "MIT",
+  "homepage": "https://github.com/tyangs/standard",
+  "keywords": [
+    "prettier"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup ./index.js --format esm,cjs --clean"
+  },
+  "peerDependencies": {
+    "prettier": ">=2.2.0"
+  },
+  "devDependencies": {
+    "tsup": "^7.2.0"
+  }
+}
