@@ -1,0 +1,18 @@
+{
+  "name": "@tyangs/commitlint",
+  "version": "1.0.0-beta.1",
+  "description": "Tyangs's code standards",
+  "author": "Tyangs <istyangs@gmail.com> (https://github.com/tyangs/)",
+  "license": "MIT",
+  "homepage": "https://github.com/tyangs/standard",
+  "keywords": [
+    "commitlint"
+  ],
+  "main": "./index.js",
+  "peerDependencies": {
+    "@commitlint/cli": ">=17.0.0"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "^18.0.0"
+  }
+}

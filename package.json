@@ -11,17 +11,13 @@
   ],
   "scripts": {
     "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,vue}\"",
-    "cz": "npx git-cz"
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.0.0",
+    "@tyangs/commitlint": "workspace:*",
     "@tyangs/prettier": "workspace:*",
-    "commitizen": "^4.3.0",
-    "cz-emoji": "1.3.2-canary.2",
+    "husky": "^8.0.3",
     "prettier": "^3.0.3"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-emoji"
-    }
   }
 }
