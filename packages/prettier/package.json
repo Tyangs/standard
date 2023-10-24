@@ -8,24 +8,8 @@
   "keywords": [
     "prettier"
   ],
-  "type": "module",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
-  },
-  "main": "./dist/index.cjs",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsup ./index.js --format esm,cjs --clean"
-  },
+  "main": "./index.js",
   "peerDependencies": {
     "prettier": ">=2.2.0"
-  },
-  "devDependencies": {
-    "tsup": "^7.2.0"
   }
 }

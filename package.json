@@ -10,8 +10,7 @@
     "prettier"
   ],
   "scripts": {
-    "build": "pnpm recursive run build",
-    "format": "pnpm build && prettier --write \"./**/*.{js,jsx,ts,tsx,json,vue}\"",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,vue}\"",
     "cz": "npx git-cz"
   },
   "devDependencies": {

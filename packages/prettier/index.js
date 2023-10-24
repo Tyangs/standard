@@ -1,5 +1,5 @@
 // https://prettier.io/docs/en/options.html
-export const options = {
+module.exports = {
   printWidth: 100,
   tabWidth: 2,
   useTabs: false,
@@ -21,5 +21,3 @@ export const options = {
   embeddedLanguageFormatting: 'auto',
   singleAttributePerLine: false,
 };
-
-export default options;
