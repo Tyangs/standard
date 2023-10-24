@@ -1,4 +1,6 @@
 // https://prettier.io/docs/en/options.html
+
+/** @type {import("prettier").Config} */
 module.exports = {
   printWidth: 100,
   tabWidth: 2,
