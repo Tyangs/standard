@@ -21,6 +21,6 @@ module.exports = {
         'test',
       ],
     ],
-    'body-min-length': [2, 'always', 4],
+    'subject-min-length': [2, 'always', 4],
   },
 };
