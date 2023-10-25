@@ -15,7 +15,7 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.0.0",
+    "@commitlint/cli": "^18.1.0",
     "@tyangs/commitlint": "workspace:*",
     "@tyangs/prettier": "workspace:*",
     "lint-staged": "^15.0.2",

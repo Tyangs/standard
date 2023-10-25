@@ -10,8 +10,8 @@
 
 - Commitlint
 
-  - [ ] TypeScript
-  - [ ] Build (cjs & mjs)
+  - [x] TypeScript
+  - [x] Build (cjs & mjs)
   - [ ] Commit prompt
   - [ ] README.md
 
@@ -19,6 +19,7 @@
 
   - [ ] ...
 
-- tsconfig.json
+- Configs
 
-  - [ ] ...
+  - [x] tsconfig.base.json
+  - [ ] README.md

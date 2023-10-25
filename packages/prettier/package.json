@@ -27,5 +27,8 @@
   },
   "peerDependencies": {
     "prettier": ">=2.2.0"
+  },
+  "devDependencies": {
+    "@tyangs/config": "workspace:*"
   }
 }

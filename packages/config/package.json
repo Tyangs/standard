@@ -1,0 +1,15 @@
+{
+  "name": "@tyangs/config",
+  "version": "1.0.0-beta.1",
+  "description": "Tyangs's code standards",
+  "author": "Tyangs <istyangs@gmail.com> (https://github.com/tyangs/)",
+  "license": "MIT",
+  "homepage": "https://github.com/tyangs/standard",
+  "keywords": [
+    "tsconfig"
+  ],
+  "files": [
+    "tsconfig.base.json",
+    "package.json"
+  ]
+}
