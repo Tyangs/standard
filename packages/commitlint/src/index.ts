@@ -1,11 +1,14 @@
+import type { UserConfig } from '@commitlint/types';
+import { RuleConfigSeverity } from '@commitlint/types';
+
 // https://github.com/conventional-changelog/commitlint
 // https://github.com/conventional-changelog/commitlint/blob/master/docs/reference-rules.md
-module.exports = {
+const config: UserConfig = {
   extends: ['@commitlint/config-conventional'],
   rules: {
-    'type-empty': [2, 'never'],
+    'type-empty': [RuleConfigSeverity.Error, 'never'],
     'type-enum': [
-      2,
+      RuleConfigSeverity.Error,
       'always',
       [
         'build',
@@ -21,6 +24,8 @@ module.exports = {
         'test',
       ],
     ],
-    'subject-min-length': [2, 'always', 4],
+    'subject-min-length': [RuleConfigSeverity.Error, 'always', 4],
   },
 };
+
+export default config;

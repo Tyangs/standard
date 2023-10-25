@@ -8,11 +8,30 @@
   "keywords": [
     "commitlint"
   ],
-  "main": "./index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
   "peerDependencies": {
     "@commitlint/cli": ">=17.0.0"
   },
   "dependencies": {
     "@commitlint/config-conventional": "^18.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/types": "^18.0.0"
   }
 }

@@ -10,14 +10,27 @@
     "prettier"
   ],
   "scripts": {
-    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,vue}\"",
-    "prepare": "husky install"
+    "build": "pnpm recursive run build",
+    "format": "pnpm build && prettier --write \"./**/*.{js,jsx,ts,tsx,json,vue}\"",
+    "prepare": "simple-git-hooks"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.0.0",
     "@tyangs/commitlint": "workspace:*",
     "@tyangs/prettier": "workspace:*",
-    "husky": "^8.0.3",
-    "prettier": "^3.0.3"
+    "lint-staged": "^15.0.2",
+    "prettier": "^3.0.3",
+    "simple-git-hooks": "^2.9.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "lint-staged": {
+    "*": [
+      "pnpm format"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "npx --no-install commitlint --edit $1"
   }
 }

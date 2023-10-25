@@ -1,6 +1,5 @@
 {
   "name": "@tyangs/prettier",
-  "type": "module",
   "version": "1.0.0-beta.1",
   "description": "Tyangs's code standards",
   "author": "Tyangs <istyangs@gmail.com> (https://github.com/tyangs/)",
@@ -9,6 +8,7 @@
   "keywords": [
     "prettier"
   ],
+  "type": "module",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -27,9 +27,5 @@
   },
   "peerDependencies": {
     "prettier": ">=2.2.0"
-  },
-  "devDependencies": {
-    "tsup": "^7.2.0",
-    "typescript": "^5.2.2"
   }
 }
