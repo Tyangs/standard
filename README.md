@@ -4,8 +4,8 @@
 
 - Prettier
 
-  - [ ] TypeScript
-  - [ ] Build (cjs & mjs)
+  - [x] TypeScript
+  - [x] Build (cjs & mjs)
   - [ ] README.md
 
 - Commitlint

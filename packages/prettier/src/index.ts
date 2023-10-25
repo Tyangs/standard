@@ -1,7 +1,7 @@
-// https://prettier.io/docs/en/options.html
+import { Options } from 'prettier';
 
-/** @type {import("prettier").Config} */
-module.exports = {
+// https://prettier.io/docs/en/options.html
+const options: Options = {
   printWidth: 100,
   tabWidth: 2,
   useTabs: false,
@@ -23,3 +23,5 @@ module.exports = {
   embeddedLanguageFormatting: 'auto',
   singleAttributePerLine: false,
 };
+
+export default options;
