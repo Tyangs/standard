@@ -17,16 +17,16 @@
 
 - ESLint
 
-  - [ ] [ESLint Flat config](https://eslint.org/docs/latest/use/configure/configuration-files-new)
-  - [ ] TypeScript
-  - [ ] Build (cjs & mjs)
+  - [x] [ESLint Flat config](https://eslint.org/docs/latest/use/configure/configuration-files-new)
+  - [x] TypeScript
+  - [x] Build (cjs & mjs)
   - [ ] README.md
   - Configs
     - [x] javascript
     - [x] ignores
     - [ ] typescript
     - [ ] react
-    - [ ] sort
+    - [x] sort
     - [ ] vue
 
 - Configs

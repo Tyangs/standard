@@ -26,12 +26,8 @@ export const javascript = (): Linter.FlatConfig => {
     linterOptions: {
       reportUnusedDisableDirectives: true,
     },
-    plugins: {
-      'unused-imports': unusedImportsPlugin,
-    },
     rules: {
       'accessor-pairs': ['error', { enforceForClassMembers: true, setWithoutGet: true }],
-
       'array-callback-return': 'error',
       'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
       'block-scoped-var': 'error',
@@ -195,25 +191,8 @@ export const javascript = (): Linter.FlatConfig => {
       'prefer-rest-params': 'error',
       'prefer-spread': 'error',
       'prefer-template': 'error',
-      'sort-imports': [
-        'error',
-        {
-          allowSeparatedGroups: false,
-          ignoreCase: false,
-          ignoreDeclarationSort: true,
-          ignoreMemberSort: false,
-          memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-        },
-      ],
-
       'symbol-description': 'error',
       'unicode-bom': ['error', 'never'],
-      'unused-imports/no-unused-imports': 'error',
-
-      'unused-imports/no-unused-vars': [
-        'error',
-        { args: 'after-used', argsIgnorePattern: '^_', vars: 'all', varsIgnorePattern: '^_' },
-      ],
       'use-isnan': ['error', { enforceForIndexOf: true, enforceForSwitchCase: true }],
       'valid-typeof': ['error', { requireStringLiterals: true }],
       'vars-on-top': 'error',
