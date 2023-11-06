@@ -1,0 +1,40 @@
+{
+  "name": "@tyangs/eslint",
+  "version": "1.0.0-beta.1",
+  "description": "Tyangs's code standards",
+  "author": "Tyangs <istyangs@gmail.com> (https://github.com/tyangs/)",
+  "license": "MIT",
+  "homepage": "https://github.com/tyangs/standard",
+  "keywords": [
+    "eslint"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@tyangs/config": "workspace:*",
+    "@types/eslint": "^8.44.6",
+    "eslint": "^8.53.0"
+  },
+  "dependencies": {
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "globals": "^13.23.0"
+  }
+}

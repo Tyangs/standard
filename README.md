@@ -6,7 +6,7 @@
 
   - [x] TypeScript
   - [x] Build (cjs & mjs)
-  - [ ] README.md
+  - [x] README.md
 
 - Commitlint
 

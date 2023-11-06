@@ -1,0 +1,4 @@
+{
+  "extends": "@tyangs/config/tsconfig.base.json",
+  "include": ["**/*.ts"]
+}
