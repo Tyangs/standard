@@ -1,6 +1,7 @@
 import { Linter } from 'eslint';
-import { ignores, javascript, imports } from './configs';
+
+import { ignores, imports, javascript, typescript } from './configs';
 
 export const factory = (): Linter.FlatConfig[] => {
-  return [javascript(), ignores(), imports()];
+  return [...javascript(), ...ignores(), ...imports(), ...typescript()];
 };

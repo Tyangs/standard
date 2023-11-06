@@ -12,6 +12,7 @@
   "scripts": {
     "build": "pnpm recursive run build",
     "lint": "eslint .",
+    "fix": "eslint --fix",
     "format": "pnpm build && prettier --write \"./**/*.{js,jsx,ts,tsx,json,vue}\"",
     "prepare": "simple-git-hooks"
   },
@@ -29,7 +30,8 @@
   },
   "lint-staged": {
     "*": [
-      "pnpm format"
+      "pnpm format",
+      "pnpm fix"
     ]
   },
   "simple-git-hooks": {

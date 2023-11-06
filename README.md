@@ -24,7 +24,7 @@
   - Configs
     - [x] javascript
     - [x] ignores
-    - [ ] typescript
+    - [x] typescript
     - [ ] react
     - [x] sort
     - [ ] vue
