@@ -35,6 +35,11 @@ export const typescript = (options?: ITypeScriptOptions): Linter.FlatConfig[] =>
 
   return [
     {
+      plugins: {
+        ts: pluginTs,
+      },
+    },
+    {
       files: [GLOB_SRC],
       languageOptions: {
         parser: parserTs,
@@ -47,9 +52,6 @@ export const typescript = (options?: ITypeScriptOptions): Linter.FlatConfig[] =>
               }
             : {}),
         },
-      },
-      plugins: {
-        ts: pluginTs,
       },
       rules: {
         ...renameRules(

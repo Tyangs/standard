@@ -25,7 +25,7 @@
     - [x] javascript
     - [x] ignores
     - [x] typescript
-    - [ ] react
+    - [x] react
     - [x] sort
     - [ ] vue
 
