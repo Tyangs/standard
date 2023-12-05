@@ -7,11 +7,11 @@ English / [简体中文](./README_CN.md)
 ### Install
 
 ```bash
-npm i @tyangs/config -D
+npm install @tyangs/config -D
 # or
 yarn add @tyangs/config -D
 # or
-pnpm i @tyangs/config -D
+pnpm install @tyangs/config -D
 ```
 
 ### tsconfig.json

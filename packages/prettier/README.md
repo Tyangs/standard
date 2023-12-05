@@ -7,11 +7,11 @@ English / [简体中文](./README_CN.md)
 ### Install
 
 ```bash
-npm i @tyangs/prettier prettier -D
+npm install @tyangs/prettier prettier -D
 # or
 yarn add @tyangs/prettier prettier -D
 # or
-pnpm i @tyangs/prettier prettier -D
+pnpm install @tyangs/prettier prettier -D
 ```
 
 ### Create config file

@@ -7,11 +7,11 @@
 ### 安装依赖
 
 ```bash
-pnpm i @tyangs/prettier prettier -D
+pnpm install @tyangs/prettier prettier -D
 # 或
 yarn add @tyangs/prettier prettier -D
 # 或
-npm i @tyangs/prettier prettier -D
+npm install @tyangs/prettier prettier -D
 ```
 
 ### 创建配置文件

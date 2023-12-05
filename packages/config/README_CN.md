@@ -7,11 +7,11 @@
 ### 安装依赖
 
 ```bash
-npm i @tyangs/config -D
+npm install @tyangs/config -D
 # 或
 yarn add @tyangs/config -D
 # 或
-pnpm i @tyangs/config -D
+pnpm install @tyangs/config -D
 ```
 
 ### tsconfig.json
