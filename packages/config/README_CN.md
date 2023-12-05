@@ -1,16 +1,16 @@
 # @tyangs/config
 
-English / [简体中文](./README_CN.md)
+[English](./README.md) / 简体中文
 
-## Usage
+## 开始使用
 
-### Install
+### 安装依赖
 
 ```bash
 npm i @tyangs/config -D
-# or
+# 或
 yarn add @tyangs/config -D
-# or
+# 或
 pnpm i @tyangs/config -D
 ```
 
@@ -19,6 +19,6 @@ pnpm i @tyangs/config -D
 ```json
 {
   "extends": "@tyangs/config/tsconfig.base.json"
-  // Add your custom config here
+  // 在此处添加自定义配置
 }
 ```

@@ -37,7 +37,7 @@ import options from '@tyangs/prettier';
 /** @type {import("prettier").Config} */
 export default {
   ...options,
-  // 在这里添加自定义配置
+  // 在此处添加自定义配置
 };
 ```
 
