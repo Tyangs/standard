@@ -22,8 +22,6 @@ npm install @tyangs/prettier prettier -D
 >
 > 更多配置参考 [Prettier 配置](https://prettier.io/docs/en/configuration)。
 
-#### JS 配置:
-
 `ESM` 方式: 在 `package.json` 中设置 [`"type": "module"`](https://nodejs.org/api/packages.html#type)。
 
 - `.prettierrc.js`
@@ -56,7 +54,7 @@ module.exports = {
 };
 ```
 
-#### JSON 配置:
+JSON 配置:
 
 - `.prettierrc`
 - `.prettierrc.json`
@@ -72,4 +70,37 @@ module.exports = {
 {
   "prettier": "@tyangs/prettier"
 }
+```
+
+### Add script for package.json
+
+举例:
+
+```json
+{
+  "scripts": {
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,vue}\""
+  }
+}
+```
+
+### Lint Staged (推荐)
+
+如果你需要每次 git 提交之前都自动格式化代码，你可以添加下面代码到你的 `package.json`：
+
+```json
+{
+  "simple-git-hooks": {
+    "pre-commit": "npm run lint-staged"
+  },
+  "lint-staged": {
+    "*": "npm run format"
+  }
+}
+```
+
+然后
+
+```bash
+npm install lint-staged simple-git-hooks -D
 ```

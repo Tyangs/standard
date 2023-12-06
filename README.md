@@ -6,14 +6,14 @@
 
   - [x] TypeScript
   - [x] Build (cjs & mjs)
-  - [x] README.md
+  - [x] [README.md](./packages/prettier/README.md)
 
 - Commitlint
 
   - [x] TypeScript
   - [x] Build (cjs & mjs)
   - [ ] Commit prompt
-  - [ ] README.md
+  - [x] [README.md](./packages/commitlint/README.md)
 
 - ESLint
 
@@ -35,4 +35,4 @@
 - Configs
 
   - [x] tsconfig.base.json
-  - [ ] README.md
+  - [x] [README.md](./packages/config/README.md)

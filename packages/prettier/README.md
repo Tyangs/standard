@@ -22,8 +22,6 @@ pnpm install @tyangs/prettier prettier -D
 >
 > For more details, refer to the [Prettier Configuration Documentation](https://prettier.io/docs/en/configuration).
 
-#### With JS:
-
 With `ESM`: [`"type": "module"`](https://nodejs.org/api/packages.html#type) in `package.json`
 
 - `.prettierrc.js`
@@ -56,7 +54,7 @@ module.exports = {
 };
 ```
 
-#### With JSON:
+With JSON:
 
 - `.prettierrc`
 - `.prettierrc.json`
@@ -72,4 +70,37 @@ module.exports = {
 {
   "prettier": "@tyangs/prettier"
 }
+```
+
+### Add script for package.json
+
+For example:
+
+```json
+{
+  "scripts": {
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,vue}\""
+  }
+}
+```
+
+### Lint Staged (recommend)
+
+If you want to apply lint and auto-fix before every commit, you can add the following to your `package.json`:
+
+```json
+{
+  "simple-git-hooks": {
+    "pre-commit": "npm run lint-staged"
+  },
+  "lint-staged": {
+    "*": "npm run format"
+  }
+}
+```
+
+and then
+
+```bash
+npm install lint-staged simple-git-hooks -D
 ```
